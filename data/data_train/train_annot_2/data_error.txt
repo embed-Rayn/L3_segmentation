@@ -1,0 +1,2 @@
+FileNotFound(*.dcm): C:\Users\qwe14\0.code\sarcopenia\data_train_raw\TrainingData2차_raw\200307_L3_External validation_MASK\sarc-10054
+FileNotFound(*.dcm): C:\Users\qwe14\0.code\sarcopenia\data_train_raw\TrainingData2차_raw\L3_internal validation_MASK\1804-15924

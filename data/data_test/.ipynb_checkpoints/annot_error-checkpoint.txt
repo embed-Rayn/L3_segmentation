@@ -1,0 +1,3 @@
+Index:	C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase1/20070803_ROI\Mask*.png
+Index:	C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase303/20150323_ROI\Mask*.png
+Index:	C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase381/20131111_ROI\Mask*.png

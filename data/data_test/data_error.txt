@@ -1,0 +1,4 @@
+InvalidDicom: C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase10\20061124_DCM\00057.dcm
+FileNotFound(RAW.txt): C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase268\20140628_RAW.txt
+FileNotFound(RAW.txt): C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase303\20150323_RAW.txt
+FileNotFound(RAW.txt): C:\Users\qwe14\0.code\sarcopenia\data_train_raw\#AsanNas\SarcopeniaCase381\20131111_RAW.txt
