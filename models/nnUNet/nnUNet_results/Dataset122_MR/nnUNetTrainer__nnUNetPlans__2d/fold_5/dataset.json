@@ -1,0 +1,14 @@
+{
+    "channel_names": {
+        "0": "gray"
+    },
+    "labels": {
+        "background": 0,
+        "subcutaneous fat": 1,
+        "muscle": 2,
+        "visceral fat": 3
+    },
+    "numTraining": 1,
+    "file_ending": ".png",
+    "name": "Dataset121_MR"
+}
