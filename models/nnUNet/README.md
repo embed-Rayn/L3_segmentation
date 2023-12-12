@@ -2,7 +2,7 @@
 
 ## 2. [nnUNet](https://github.com/MIC-DKFZ/nnUNet)
 
-![nnU-Net overview](documentation/assets/nnU-Net_overview.png)
+![nnU-Net overview](https://github.com/MIC-DKFZ/nnUNet/raw/master/documentation/assets/nnU-Net_overview.png)
 
 -   별도의 설치나 구성이 필요 없이 바로 사용할 수 있는 알고리즘을 제공
 -   개별 파이프라인을 조정할 필요 없이(예: 새로운 손실 함수 평가) 수많은 데이터세트에 대한 기여도를 테스트하는 방법 개발 프레임워크 역할을 할 수 있습니다.
@@ -18,6 +18,8 @@ cd nnUNet
 pip install -e .
 pip install --upgrade git+https://github.com/FabianIsensee/hiddenlayer.git
 ```
+
+git clone 후 nnUNet에 **현 폴더의 내용만 복사**할 것!
 
 ### 사용 방법
 
