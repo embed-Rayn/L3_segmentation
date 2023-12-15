@@ -21,10 +21,24 @@ cd MedSAM
 pip install -e .
 ```
 
+매번 실행 시
+
+```python
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+```
+
+또는 터미널에서
+
+```bash
+set KMP_DUPLICATE_LIB_OK=True
+```
+
 ### 데이터 전처리
 
-`train_one_gpu.py` 의 학습 스크립트를 따름
-`work_dir/SAM/sam_vit_b_01ec64.pth` 를 바탕으로 학습하기에 데이터 입력 형식 맞춤
+-   [[전처리 코드](data_preprocess.ipynb)]
+    `train_one_gpu.py` 의 학습 스크립트를 따름
+    `work_dir/SAM/sam_vit_b_01ec64.pth` 를 바탕으로 학습하기에 데이터 입력 형식 맞춤
 
 -   img
     -   shape = (1024 \* 1024 \* 3)
