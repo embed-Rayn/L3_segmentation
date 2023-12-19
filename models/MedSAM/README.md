@@ -49,4 +49,28 @@ set KMP_DUPLICATE_LIB_OK=True
 
 ### 사용 방법
 
+-   학습 명령어
+
+```bash
+python train_one_gpu.py -i [인풋 데이터 path] -checkpoint [저장할 pth path] -pretrain_model_path [사전학습 pth path] -num_epochs [epoch 수]
+python train_one_gpu.py -i data/npy/MR_L3 -pretrain_model_path model_weight/medsam_vit_b.pth -num_epochs 100
+```
+
+-   inference
+    오류 발생 시 [MedSAM home]/segment_anything/build_sam.py 수정 - state_dict = torch.load(f) --> state_dict = torch.load(f)['model']
+
+```bash
+python MedSAM_Inference.py -i [data_path.png] -chk [학습된 pth 파일] -o [저장 위치]
+python MedSAM_Inference.py -i assets/img_demo.png -chk work_dir/MedSAM/medsam_vit_b.pth
+```
+
 ### 결과
+
+-   RTX 3080 단일 GPU, 1080개 데이터 학습 기준 1epoch 당 3시간 소요
+-   45 epoch 중 34 epoch 결과 아래 표시
+-   낮은 성능 및 열화 발생 - 더 많은 학습 필요할 것으로 보임
+    ![sam_loss](../../documentation/assets/MedSAM_loss.png)
+    ![sam_rst_1](../../documentation/assets/sam_rst_1.png)
+    ![sam_rst_2](../../documentation/assets/sam_rst_2.png)
+    ![sam_rst_3](../../documentation/assets/sam_rst_3.png)
+    ![sam_rst_4](../../documentation/assets/sam_rst_4.png)
