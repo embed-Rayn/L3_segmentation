@@ -71,8 +71,17 @@
 
 ### 3. [MedSAM](https://github.com/bowang-lab/MedSAM)
 
-(예정)
+#### [프로젝트 세부 내용](./models/MedSAM/README.md)
 
-#### 전처리
+#### 결과
+
+-   RTX 3080 단일 GPU, 1080개 데이터 학습 기준 1epoch 당 3시간 소요
+-   45 epoch 중 34 epoch 결과 아래 표시
+-   낮은 성능 및 열화 발생 - 더 많은 학습 필요할 것으로 보임
+    ![sam_loss](documentation/assets/MedSAM_loss.png)
+    ![sam_rst_1](documentation/assets/sam_rst_1.png)
+    ![sam_rst_2](documentation/assets/sam_rst_2.png)
+    ![sam_rst_3](documentation/assets/sam_rst_3.png)
+    ![sam_rst_4](documentation/assets/sam_rst_4.png)
 
 ---
