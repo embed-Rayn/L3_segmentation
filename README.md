@@ -52,20 +52,28 @@
 
     -   73epoch에서 가장 낮은 validation loss가 나옴
     -   visceral fat에서 intentsity가 낮은 부분은 제외하고 mask를 그림
-    -   준수한 성능
+    -   기존 모델에 비해 준수한 성능
 
 -   predict test set
 
     -   IoU: 0.9628262044508722
-    -   f1_macro score: 0.9641467903028997
+    -   f1 score: 0.9641467903028997
     -   accuacy: 0.9737020775123879
         ![nnunet_result1](./documentation/assets/nnunet_result1.png)
 
--   predict test set(HU 적용된 테스트 셋 900개)
-    -   IoU: 0.8536284178059751
-    -   f1_macro score: 0.919161017746382
-    -   accuacy: 0.9582923056065351
+-   **predict test set(HU 적용된 테스트 셋 900개)**
+
+    -   IoU(**약 5.2% 향상**): 0.8536284178059751
+    -   f1 score(**약 4.5% 향상**): 0.919161017746382
+    -   accuacy(**약 1.7% 향상**): 0.9582923056065351
+    -   dice_score(**약 2.4% 향상**): 2.00521270481237
         ![nnunet_result2](./documentation/assets/nnunet_result2.png)
+
+-   **predict test set(HU 적용된 테스트 셋 900개 중 147개)**
+    -   IoU: 0.8112280244619839
+    -   f1 score: 0.8794973396410838
+    -   accuacy: 0.9425790773942166
+    -   dice_score: 1.9572716711961669
 
 ---
 

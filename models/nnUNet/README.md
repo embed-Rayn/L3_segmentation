@@ -33,7 +33,7 @@ git clone 후 nnUNet에 **현 폴더의 내용만 복사**할 것!
 
     -   73epoch에서 가장 낮은 validation loss가 나옴
     -   visceral fat에서 intentsity가 낮은 부분은 제외하고 mask를 그림
-    -   준수한 성능
+    -   기존 모델에 비해 준수한 성능
 
 -   predict test set
 
@@ -46,4 +46,21 @@ git clone 후 nnUNet에 **현 폴더의 내용만 복사**할 것!
     -   IoU: 0.8536284178059751
     -   f1_macro score: 0.919161017746382
     -   accuacy: 0.9582923056065351
+    -   dice_score: 2.00521270481237
         ![nnunet_result2](../../documentation/assets/nnunet_result2.png)
+
+### [기존 모델과의 비교](./compare_with_standard.pdf)
+
+-   [정확도 비교 소스코드](./compare_with_standard.ipynb)
+-   [기존 모델](https://github.com/embed-Rayn/commercialization/blob/main/program.md)
+    -   dicom 파일 시리즈를 입력 시
+        -   "L3 위치 dicom 파일 선정" - "segmentation"
+        -   정확한 L3 위치 dicom 파일을 골랐을 경우만 테스트 셋으로 사용
+        -   900개의 데이터 중 147개 사용
+    -   predict test set(HU 적용된 테스트 셋 900개 중 147개)
+        -   IoU: 0.8112280244619839
+        -   f1 score: 0.8794973396410838
+        -   accuacy: 0.9425790773942166
+        -   dice_score: 1.9572716711961669
+
+![standard_result](../../documentation/assets/standard_result.png)
