@@ -37,17 +37,25 @@ git clone 후 nnUNet에 **현 폴더의 내용만 복사**할 것!
 
 -   predict test set
 
-    -   IoU: 0.9628262044508722
-    -   f1_macro score: 0.9641467903028997
-    -   accuacy: 0.9737020775123879
-        ![nnunet_result1](../../documentation/assets/nnunet_result1.png)
+|                | Sfat       | muscle     | Vfat       |
+| -------------- | ---------- | ---------- | ---------- |
+| IoU            | 0.95033022 | 0.89425196 | 0.91567544 |
+| f1_macro score | 0.98567289 | 0.96375608 | 0.97519908 |
+| accuacy        | 0.99475716 | 0.97857931 | 0.99035207 |
+| dice_score     | 0.97432034 | 0.94070718 | 0.95585051 |
+
+![nnunet_result1](../../documentation/assets/nnunet_result1.png)
 
 -   predict test set(HU 적용된 테스트 셋 900개)
-    -   IoU: 0.8536284178059751
-    -   f1_macro score: 0.919161017746382
-    -   accuacy: 0.9582923056065351
-    -   dice_score: 2.00521270481237
-        ![nnunet_result2](../../documentation/assets/nnunet_result2.png)
+
+|            | Sfat     | muscle   | Vfat     |
+| ---------- | -------- | -------- | -------- |
+| IoU        | 0.810893 | 0.807782 | 0.729217 |
+| F1 score   | 0.938769 | 0.938475 | 0.905202 |
+| accuacy    | 0.988644 | 0.978098 | 0.9796   |
+| dice_score | 0.883777 | 0.88919  | 0.821543 |
+
+![nnunet_result2](../../documentation/assets/nnunet_result2.png)
 
 ### [기존 모델과의 비교](./compare_with_standard.pdf)
 
@@ -58,9 +66,12 @@ git clone 후 nnUNet에 **현 폴더의 내용만 복사**할 것!
         -   정확한 L3 위치 dicom 파일을 골랐을 경우만 테스트 셋으로 사용
         -   900개의 데이터 중 147개 사용
     -   predict test set(HU 적용된 테스트 셋 900개 중 147개)
-        -   IoU: 0.8112280244619839
-        -   f1 score: 0.8794973396410838
-        -   accuacy: 0.9425790773942166
-        -   dice_score: 1.9572716711961669
+
+|            | Sfat     | muscle   | Vfat     |
+| ---------- | -------- | -------- | -------- |
+| IoU        | 0.906541 | 0.80487  | 0.851837 |
+| F1 score   | 0.971276 | 0.936495 | 0.9549   |
+| accuacy    | 0.994272 | 0.977522 | 0.99231  |
+| dice_score | 0.945715 | 0.885566 | 0.913961 |
 
 ![standard_result](../../documentation/assets/standard_result.png)

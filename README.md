@@ -56,24 +56,34 @@
 
 -   predict test set
 
-    -   IoU: 0.9628262044508722
-    -   f1 score: 0.9641467903028997
-    -   accuacy: 0.9737020775123879
-        ![nnunet_result1](./documentation/assets/nnunet_result1.png)
+|                | Sfat       | muscle     | Vfat       |
+| -------------- | ---------- | ---------- | ---------- |
+| IoU            | 0.95033022 | 0.89425196 | 0.91567544 |
+| f1_macro score | 0.98567289 | 0.96375608 | 0.97519908 |
+| accuacy        | 0.99475716 | 0.97857931 | 0.99035207 |
+| dice_score     | 0.97432034 | 0.94070718 | 0.95585051 |
 
--   **predict test set(HU 적용된 테스트 셋 900개)**
+![nnunet_result1](./documentation/assets/nnunet_result1.png)
 
-    -   IoU(**약 5.2% 향상**): 0.8536284178059751
-    -   f1 score(**약 4.5% 향상**): 0.919161017746382
-    -   accuacy(**약 1.7% 향상**): 0.9582923056065351
-    -   dice_score(**약 2.4% 향상**): 2.00521270481237
-        ![nnunet_result2](./documentation/assets/nnunet_result2.png)
+-   nnUNet모델: **predict test set(HU 적용된 테스트 셋 900개)**
 
--   **predict test set(HU 적용된 테스트 셋 900개 중 147개)**
-    -   IoU: 0.8112280244619839
-    -   f1 score: 0.8794973396410838
-    -   accuacy: 0.9425790773942166
-    -   dice_score: 1.9572716711961669
+|            | Sfat     | muscle   | Vfat     |
+| ---------- | -------- | -------- | -------- |
+| IoU        | 0.906541 | 0.80487  | 0.851837 |
+| F1 score   | 0.971276 | 0.936495 | 0.9549   |
+| accuacy    | 0.994272 | 0.977522 | 0.99231  |
+| dice_score | 0.945715 | 0.885566 | 0.913961 |
+
+![nnunet_result2](./documentation/assets/nnunet_result2.png)
+
+-   기존 모델: **predict test set(HU 적용된 테스트 셋 900개 중 149개)**
+
+|            | Sfat     | muscle   | Vfat     |
+| ---------- | -------- | -------- | -------- |
+| IoU        | 0.810893 | 0.807782 | 0.729217 |
+| F1 score   | 0.938769 | 0.938475 | 0.905202 |
+| accuacy    | 0.988644 | 0.978098 | 0.9796   |
+| dice_score | 0.883777 | 0.88919  | 0.821543 |
 
 ---
 
